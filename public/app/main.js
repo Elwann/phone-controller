@@ -45,7 +45,7 @@
 				return;
 				
 			room = data.room;
-			message.innerHTML = "<p>Utilisez ce code : </p><p style='font-size:36px;'><strong>"+room+"</strong></p><p>sur votre téléphone pour vous connecter</p>";
+			message.innerHTML = "<p>Utilisez ce code : </p><p style='font-size:36px;'><strong>"+room+"</strong></p><p>sur votre t&eacute;l&eacute;phone pour vous connecter</p>";
 		});
 		
 		socket.on('controller', function(){
@@ -63,7 +63,7 @@
 	}
 	
 	function initController(){
-		message.innerHTML = '<p><p id="erreur"></p><input type="number" id="room" /><button id="login">Se connecter</button></p>';
+		message.innerHTML = '<p><p>Connectez vous sur un ordinateur pour obtenir un code de connexion.</p><p id="erreur"></p><input type="number" id="room" /><button id="login">Se connecter</button></p>';
 		
 		var waiting = false;
 		var input = document.getElementById("room");
@@ -90,7 +90,7 @@
 		});
 		
 		function createController(){
-			message.innerHTML = "Toucher l'écran pour bouger le cercle";
+			message.innerHTML = "Touchez l'&eacute;cran pour bouger le cercle";
 			
 			function moveCircle(e){
 				e.preventDefault();
