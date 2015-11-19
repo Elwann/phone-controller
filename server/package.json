@@ -1,0 +1,8 @@
+{
+  "name": "socket-phone-manette",
+  "version": "0.0.1",
+  "description": "phone manette",
+  "dependencies": {
+    "socket.io": "^1.3.5"
+  }
+}
